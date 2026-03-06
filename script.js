@@ -1,61 +1,56 @@
-// typing animation
 
-const text = "Junior Web Developer";
-let i = 0;
+const texts = [
+"Junior Web Developer",
+"Backend Developer",
+"Java Developer"
+]
 
-function typing(){
+let i = 0
+let j = 0
+let current = ""
+let isDeleting = false
 
-if(i < text.length){
+function type(){
 
-document.querySelector(".typing").innerHTML += text.charAt(i);
+current = texts[i]
 
-i++;
+if(!isDeleting){
 
-setTimeout(typing,80);
+document.getElementById("typing").textContent = current.substring(0,j++)
+if(j > current.length){
+
+isDeleting = true
+setTimeout(type,1000)
+return
+
+}
+
+}else{
+
+document.getElementById("typing").textContent = current.substring(0,j--)
+if(j == 0){
+
+isDeleting = false
+i = (i+1)%texts.length
 
 }
 
 }
 
-typing();
-
-
-
-// scroll animation
-
-const sections = document.querySelectorAll(".section");
-
-window.addEventListener("scroll",()=>{
-
-sections.forEach(sec=>{
-
-let top = window.scrollY;
-
-let offset = sec.offsetTop - 400;
-
-if(top > offset){
-
-sec.style.opacity = 1;
-sec.style.transform = "translateY(0)";
+setTimeout(type,100)
 
 }
 
-})
-
-})
+type()
 
 
-// smooth scroll
 
-document.querySelectorAll("nav a").forEach(link=>{
+/* dark mode */
 
-link.addEventListener("click",e=>{
+const toggle = document.getElementById("themeToggle")
 
-e.preventDefault();
+toggle.onclick = () =>{
 
-document.querySelector(link.getAttribute("href"))
-.scrollIntoView({behavior:"smooth"})
+document.body.classList.toggle("light")
 
-})
-
-})
+}
