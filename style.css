@@ -1,56 +1,55 @@
-body{
+*{
 margin:0;
-font-family:'Inter';
-background:#0f172a;
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
 }
 
-.navbar{
+body{
 
-position:fixed;
-top:0;
-width:100%;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+
+}
+
+
+header{
+
 display:flex;
 justify-content:space-between;
-padding:20px 10%;
-background:rgba(0,0,0,0.5);
-backdrop-filter:blur(10px);
+padding:20px 60px;
+align-items:center;
 
 }
 
-.navbar ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
+nav a{
 
-.navbar a{
-color:white;
+margin:0 15px;
 text-decoration:none;
+color:white;
+opacity:.8;
+
 }
 
+nav a:hover{
+
+opacity:1;
+
+}
 
 .hero{
 
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:160px 10%;
-min-height:100vh;
+padding:100px;
 
 }
 
 .hero-text{
-max-width:600px;
-}
 
-.title{
-font-size:60px;
-margin:10px 0;
-}
+max-width:500px;
 
-.typing{
-color:#38bdf8;
 }
 
 .btn{
@@ -59,92 +58,124 @@ display:inline-block;
 margin-top:20px;
 padding:12px 30px;
 background:#38bdf8;
-color:black;
 border-radius:30px;
+color:white;
 text-decoration:none;
+transition:.3s;
 
 }
 
-.hero-image img{
+.btn:hover{
 
-width:350px;
-border-radius:20px;
-animation:float 4s infinite ease-in-out;
+transform:scale(1.1);
 
 }
 
-@keyframes float{
 
-0%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
-100%{transform:translateY(0)}
+
+/* glowing avatar */
+
+.avatar-ring{
+
+width:260px;
+height:260px;
+border-radius:50%;
+padding:6px;
+
+background:conic-gradient(
+#00f7ff,
+#00ffa6,
+#00f7ff
+);
+
+animation:spin 6s linear infinite;
 
 }
 
-.section{
+.avatar-ring img{
 
-padding:120px 10%;
+width:100%;
+border-radius:50%;
+display:block;
 
 }
 
-.tech-grid{
+@keyframes spin{
+
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+
+}
+
+
+
+/* skills */
+
+.skills-grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns:repeat(2,1fr);
 gap:20px;
 
 }
 
-.tech{
+.skill{
+
+margin-top:15px;
+
+}
+
+.bar{
 
 background:#1e293b;
-padding:20px;
-text-align:center;
+height:10px;
 border-radius:10px;
-transition:0.3s;
+overflow:hidden;
 
 }
 
-.tech:hover{
+.bar span{
 
-transform:scale(1.1);
-background:#334155;
+display:block;
+height:100%;
+background:#38bdf8;
 
 }
+
+
+
+/* project */
 
 .project-card{
 
-background:#1e293b;
-padding:40px;
+background:rgba(255,255,255,.05);
+padding:30px;
 border-radius:20px;
-transition:0.3s;
+margin-top:30px;
+backdrop-filter:blur(10px);
 
 }
 
-.project-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.project-card video{
+video{
 
 width:100%;
-margin:20px 0;
+margin-top:20px;
 border-radius:10px;
 
 }
 
-.contact{
 
-text-align:center;
+section{
+
+padding:80px;
 
 }
+
 
 footer{
 
 text-align:center;
-padding:40px;
-background:black;
+padding:30px;
+opacity:.6;
 
 }
