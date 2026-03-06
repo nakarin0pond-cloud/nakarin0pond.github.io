@@ -8,219 +8,19 @@
 
 <title>Nakarin Nanthasen | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:30px 10%;
-position:fixed;
-width:100%;
-background:#0f172a;
-z-index:1000;
-}
-
-nav h2{
-font-size:20px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-
-/* HERO */
-
-.hero{
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-
-padding:180px 10% 120px;
-
-}
-
-.hero-left{
-max-width:600px;
-}
-
-.status{
-background:#1e293b;
-padding:6px 12px;
-border-radius:20px;
-display:inline-block;
-margin-bottom:20px;
-font-size:14px;
-}
-
-.hero-left h1{
-font-size:60px;
-margin-bottom:10px;
-}
-
-.hero-left h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-.hero-left p{
-color:#cbd5f5;
-margin-bottom:30px;
-}
-
-.btn{
-
-display:inline-block;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-
-}
-
-.hero-right img{
-width:360px;
-border-radius:20px;
-box-shadow:0 20px 40px rgba(0,0,0,0.6);
-}
-
-
-/* SECTION */
-
-section{
-padding:120px 10%;
-}
-
-.section-title{
-font-size:40px;
-margin-bottom:50px;
-}
-
-
-/* TECH STACK */
-
-.tech-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-
-}
-
-.tech{
-
-background:#1e293b;
-padding:20px;
-text-align:center;
-border-radius:10px;
-transition:0.3s;
-
-}
-
-.tech:hover{
-transform:translateY(-5px);
-background:#334155;
-}
-
-
-/* PROJECT */
-
-.project{
-
-background:#1e293b;
-padding:40px;
-border-radius:15px;
-
-}
-
-.project h3{
-margin-bottom:15px;
-}
-
-.project ul{
-margin-top:20px;
-margin-left:20px;
-}
-
-.project video{
-margin-top:20px;
-width:100%;
-border-radius:10px;
-}
-
-
-/* CONTACT */
-
-.contact{
-
-text-align:center;
-
-}
-
-.contact a{
-
-display:inline-block;
-margin-top:20px;
-color:#38bdf8;
-text-decoration:none;
-
-}
-
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-padding:40px;
-background:#020617;
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
 
+<!-- NAVBAR -->
 
-<nav>
+<nav class="navbar">
 
-<h2>Nakarin.dev</h2>
+<div class="logo">Nakarin.dev</div>
 
 <ul>
 
@@ -234,26 +34,23 @@ background:#020617;
 </nav>
 
 
-
 <!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-left">
+<div class="hero-text">
 
 <p class="status">🟢 Available for Internship</p>
 
-<h1>Nakarin Nanthasen</h1>
+<h1 class="title">Nakarin Nanthasen</h1>
 
-<h2>Junior Web Developer</h2>
+<h2 class="typing"></h2>
 
 <p>
 
-Information Technology student with experience in web application development  
-using Java, Spring MVC, HTML, CSS, and MySQL.
+Information Technology student experienced in building web applications using Java Spring MVC.
 
-นักศึกษาสาขาเทคโนโลยีสารสนเทศ สนใจพัฒนา Web Application  
-และมีประสบการณ์ในการพัฒนาเว็บไซต์ด้วย Java Spring MVC
+นักศึกษาสาขาเทคโนโลยีสารสนเทศ สนใจพัฒนา Web Application และ Backend System
 
 </p>
 
@@ -261,8 +58,7 @@ using Java, Spring MVC, HTML, CSS, and MySQL.
 
 </div>
 
-
-<div class="hero-right">
+<div class="hero-image">
 
 <img src="images/profile.jpg">
 
@@ -271,54 +67,40 @@ using Java, Spring MVC, HTML, CSS, and MySQL.
 </section>
 
 
-
 <!-- ABOUT -->
 
-<section id="about">
+<section id="about" class="section">
 
-<h2 class="section-title">About Me</h2>
+<h2>About Me</h2>
 
 <p>
 
-I am an Information Technology student at Maejo University.  
-I enjoy building practical web applications and solving real-world problems through software.
+I am an IT student at Maejo University passionate about web development.
 
-ผมเป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยแม่โจ้  
-สนใจพัฒนา Web Application และต้องการพัฒนาทักษะด้านการเขียนโปรแกรม  
-เพื่อสร้างระบบที่สามารถนำไปใช้งานจริงได้
+ผมสนใจพัฒนา Web Application และต้องการพัฒนาทักษะเพื่อทำงานในสาย Software Development
 
 </p>
 
 </section>
 
 
-
 <!-- TECH STACK -->
 
-<section id="tech">
+<section id="tech" class="section">
 
-<h2 class="section-title">Tech Stack</h2>
+<h2>Tech Stack</h2>
 
 <div class="tech-grid">
 
 <div class="tech">Java</div>
-
 <div class="tech">Spring MVC</div>
-
 <div class="tech">MySQL</div>
-
 <div class="tech">HTML</div>
-
 <div class="tech">CSS</div>
-
 <div class="tech">JavaScript</div>
-
 <div class="tech">JSP</div>
-
 <div class="tech">Tailwind</div>
-
 <div class="tech">Git</div>
-
 <div class="tech">Docker</div>
 
 </div>
@@ -326,22 +108,19 @@ I enjoy building practical web applications and solving real-world problems thro
 </section>
 
 
-
 <!-- PROJECT -->
 
-<section id="projects">
+<section id="projects" class="section">
 
-<h2 class="section-title">Projects</h2>
+<h2>Projects</h2>
 
-
-<div class="project">
+<div class="project-card">
 
 <h3>Community Agricultural Pre-order Website</h3>
 
 <p>
 
-Web application for community agricultural product pre-ordering  
-built using Java Spring MVC.
+Web application for community agricultural product pre-ordering built using Java Spring MVC.
 
 เว็บไซต์สำหรับค้นหาและสั่งจองสินค้าเกษตรจากชุมชนล่วงหน้า
 
@@ -356,21 +135,17 @@ built using Java Spring MVC.
 
 </ul>
 
-<p>
+<p class="techstack">
 
-Tech Stack:  
-Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
+Tech Stack: Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 
 </p>
 
-
 <video controls>
 
-<source src="video/project-demo.mp4">
+<source src="video/demo.mp4">
 
 </video>
-
-<br><br>
 
 <a href="https://github.com/786pondchannel/MiniProJ012" class="btn">View GitHub</a>
 
@@ -379,12 +154,11 @@ Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 </section>
 
 
-
 <!-- CONTACT -->
 
-<section id="contact" class="contact">
+<section id="contact" class="section contact">
 
-<h2 class="section-title">Contact</h2>
+<h2>Contact</h2>
 
 <p>Email: Nakarin0pond@gmail.com</p>
 
@@ -395,13 +169,14 @@ Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 </section>
 
 
-
 <footer>
 
-<p>© 2026 Nakarin Nanthasen</p>
+© 2026 Nakarin Nanthasen
 
 </footer>
 
+
+<script src="script.js"></script>
 
 </body>
 </html>
