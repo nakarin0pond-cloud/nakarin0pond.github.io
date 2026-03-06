@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nakarin Nanthasen | Portfolio</title>
+<title>Nakarin Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-
-<nav class="navbar">
+<header>
 
 <div class="logo">Nakarin.dev</div>
 
-<ul>
+<nav>
 
-<li><a href="#about">About</a></li>
-<li><a href="#tech">Tech</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
-</ul>
+<button id="themeToggle">🌙</button>
 
 </nav>
 
+</header>
 
-<!-- HERO -->
 
 <section class="hero">
 
 <div class="hero-text">
 
-<p class="status">🟢 Available for Internship</p>
+<h1>Nakarin Nanthasen</h1>
 
-<h1 class="title">Nakarin Nanthasen</h1>
-
-<h2 class="typing"></h2>
+<h2 id="typing"></h2>
 
 <p>
-
-Information Technology student experienced in building web applications using Java Spring MVC.
-
-นักศึกษาสาขาเทคโนโลยีสารสนเทศ สนใจพัฒนา Web Application และ Backend System
-
+Information Technology student passionate about Web Development
+and Backend Systems using Java Spring MVC.
 </p>
 
 <a href="#projects" class="btn">View Projects</a>
 
 </div>
 
+
 <div class="hero-image">
 
-<img src="images/pond.png">
+<div class="avatar-ring">
+
+<img src="images/profile.jpg">
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ABOUT -->
 
-<section id="about" class="section">
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
-
-I am an IT student at Maejo University passionate about web development.
-
-ผมสนใจพัฒนา Web Application และต้องการพัฒนาทักษะเพื่อทำงานในสาย Software Development
-
+I am an IT student at Maejo University interested in Web Application Development
+and Software Engineering. I enjoy building backend systems and solving problems.
 </p>
 
 </section>
 
 
-<!-- TECH STACK -->
 
-<section id="tech" class="section">
+<section id="skills">
 
 <h2>Tech Stack</h2>
 
-<div class="tech-grid">
+<div class="skills-grid">
 
-<div class="tech">Java</div>
-<div class="tech">Spring MVC</div>
-<div class="tech">MySQL</div>
-<div class="tech">HTML</div>
-<div class="tech">CSS</div>
-<div class="tech">JavaScript</div>
-<div class="tech">JSP</div>
-<div class="tech">Tailwind</div>
-<div class="tech">Git</div>
-<div class="tech">Docker</div>
+<div class="skill">
+Java
+<div class="bar"><span style="width:80%"></span></div>
+</div>
+
+<div class="skill">
+Spring MVC
+<div class="bar"><span style="width:75%"></span></div>
+</div>
+
+<div class="skill">
+MySQL
+<div class="bar"><span style="width:70%"></span></div>
+</div>
+
+<div class="skill">
+HTML / CSS
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar"><span style="width:60%"></span></div>
+</div>
 
 </div>
 
 </section>
 
 
-<!-- PROJECT -->
 
-<section id="projects" class="section">
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -119,11 +123,7 @@ I am an IT student at Maejo University passionate about web development.
 <h3>Community Agricultural Pre-order Website</h3>
 
 <p>
-
 Web application for community agricultural product pre-ordering built using Java Spring MVC.
-
-เว็บไซต์สำหรับค้นหาและสั่งจองสินค้าเกษตรจากชุมชนล่วงหน้า
-
 </p>
 
 <ul>
@@ -135,28 +135,31 @@ Web application for community agricultural product pre-ordering built using Java
 
 </ul>
 
-<p class="techstack">
-
-Tech Stack: Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
-
+<p class="tech">
+Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 </p>
+
 
 <video controls>
 
-<source src="video/demo.mp4">
+<source src="video/demo.mp4" type="video/mp4">
 
 </video>
 
-<a href="https://github.com/786pondchannel/MiniProJ012" class="btn">View GitHub</a>
+
+<a class="btn" href="https://github.com/786pondchannel/MiniProJ012" target="_blank">
+
+View GitHub
+
+</a>
 
 </div>
 
 </section>
 
 
-<!-- CONTACT -->
 
-<section id="contact" class="section contact">
+<section id="contact">
 
 <h2>Contact</h2>
 
@@ -164,7 +167,11 @@ Tech Stack: Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 
 <p>Phone: 081-515-7121</p>
 
-<a href="https://github.com/nakarin0pond-cloud">GitHub</a>
+<a href="https://github.com/nakarin0pond-cloud" target="_blank">
+
+GitHub
+
+</a>
 
 </section>
 
