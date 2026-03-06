@@ -1,150 +1,61 @@
-body{
-margin:0;
-font-family:'Inter';
-background:#0f172a;
-color:white;
-}
+// typing animation
 
-.navbar{
+const text = "Junior Web Developer";
+let i = 0;
 
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:rgba(0,0,0,0.5);
-backdrop-filter:blur(10px);
+function typing(){
+
+if(i < text.length){
+
+document.querySelector(".typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing,80);
 
 }
 
-.navbar ul{
-display:flex;
-gap:30px;
-list-style:none;
 }
 
-.navbar a{
-color:white;
-text-decoration:none;
-}
+typing();
 
 
-.hero{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:160px 10%;
-min-height:100vh;
+// scroll animation
 
-}
+const sections = document.querySelectorAll(".section");
 
-.hero-text{
-max-width:600px;
-}
+window.addEventListener("scroll",()=>{
 
-.title{
-font-size:60px;
-margin:10px 0;
-}
+sections.forEach(sec=>{
 
-.typing{
-color:#38bdf8;
-}
+let top = window.scrollY;
 
-.btn{
+let offset = sec.offsetTop - 400;
 
-display:inline-block;
-margin-top:20px;
-padding:12px 30px;
-background:#38bdf8;
-color:black;
-border-radius:30px;
-text-decoration:none;
+if(top > offset){
+
+sec.style.opacity = 1;
+sec.style.transform = "translateY(0)";
 
 }
 
-.hero-image img{
+})
 
-width:350px;
-border-radius:20px;
-animation:float 4s infinite ease-in-out;
+})
 
-}
 
-@keyframes float{
+// smooth scroll
 
-0%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
-100%{transform:translateY(0)}
+document.querySelectorAll("nav a").forEach(link=>{
 
-}
+link.addEventListener("click",e=>{
 
-.section{
+e.preventDefault();
 
-padding:120px 10%;
+document.querySelector(link.getAttribute("href"))
+.scrollIntoView({behavior:"smooth"})
 
-}
+})
 
-.tech-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-
-}
-
-.tech{
-
-background:#1e293b;
-padding:20px;
-text-align:center;
-border-radius:10px;
-transition:0.3s;
-
-}
-
-.tech:hover{
-
-transform:scale(1.1);
-background:#334155;
-
-}
-
-.project-card{
-
-background:#1e293b;
-padding:40px;
-border-radius:20px;
-transition:0.3s;
-
-}
-
-.project-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.project-card video{
-
-width:100%;
-margin:20px 0;
-border-radius:10px;
-
-}
-
-.contact{
-
-text-align:center;
-
-}
-
-footer{
-
-text-align:center;
-padding:40px;
-background:black;
-
-}
+})
