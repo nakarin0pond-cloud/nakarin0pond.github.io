@@ -3,173 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nakarin Nanthasen | Web Developer</title>
+
+<title>Nakarin Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Poppins,sans-serif}
-body{background:#0f172a;color:#e5e7eb;line-height:1.6}
-header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px}
-.hero-img{width:200px;border-radius:10px;margin-bottom:20px}
-h1{font-size:2.2rem;margin-bottom:10px}
-.title{color:#38bdf8;font-weight:600}
-.typing{margin-top:10px;color:#94a3b8}
-.btn{margin-top:25px;padding:12px 24px;border:none;border-radius:6px;background:#38bdf8;color:#0f172a;font-weight:600;cursor:pointer}
-section{padding:70px 20px;max-width:1000px;margin:auto}
-h2{margin-bottom:25px;color:#38bdf8}
-.about{font-size:1rem;color:#cbd5f5}
-.skills{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.skill{background:#1e293b;padding:15px;border-radius:6px}
-.bar{height:8px;background:#334155;border-radius:5px;margin-top:8px}
-.fill{height:8px;background:#38bdf8;width:0;border-radius:5px;transition:1.5s}
-.project-card{background:#1e293b;padding:25px;border-radius:8px}
-.project-card ul{margin-top:10px;margin-left:18px}
-.tech{margin-top:10px;color:#94a3b8}
-.achieve{display:flex;flex-direction:column;align-items:center}
-.achieve img{width:280px;border-radius:8px;margin-top:15px}
-.contact{text-align:center}
-footer{text-align:center;padding:20px;color:#64748b}
-@media(max-width:700px){
-.skills{grid-template-columns:1fr}
-}
-</style>
+
 </head>
+
 <body>
 
+<div id="particles"></div>
+
 <header>
-<img src="graduate.jpg" class="hero-img" alt="profile">
+
 <h1>Nakarin Nanthasen</h1>
-<div class="title">Junior Web Developer</div>
-<div class="typing" id="typing"></div>
-<button class="btn" onclick="scrollToSection('projects')">View Project</button>
+
+<h2 class="typing"></h2>
+
 </header>
 
-<section>
+
+<section class="about">
+
+<img src="images/profile.jpg">
+
+<div>
+
 <h2>About Me</h2>
-<p class="about">
-Information Technology Student from Maejo University.
 
-Interested in Web Application Development using Java, Spring MVC, HTML, CSS and MySQL.
+<p>
 
-กำลังมองหาโอกาสในการทำงานเพื่อพัฒนาทักษะด้าน Web Development และสร้างประสบการณ์จริงในการทำงาน.
+Information Technology student with experience in web application development using Java, Spring MVC, HTML, CSS, and MySQL.
+
+สนใจพัฒนาเว็บแอปพลิเคชันและต้องการพัฒนาทักษะเพื่อทำงานด้าน Web Development
+
 </p>
+
+</div>
+
 </section>
 
-<section>
-<h2>Technical Skills</h2>
-<div class="skills">
 
-<div class="skill">Java
-<div class="bar"><div class="fill" data-width="90%"></div></div>
-</div>
+<section class="skills">
 
-<div class="skill">Spring MVC
-<div class="bar"><div class="fill" data-width="80%"></div></div>
-</div>
+<h2>Tech Stack</h2>
 
-<div class="skill">HTML / CSS
-<div class="bar"><div class="fill" data-width="85%"></div></div>
-</div>
+<div class="skill">
 
-<div class="skill">JavaScript
-<div class="bar"><div class="fill" data-width="60%"></div></div>
-</div>
+Java
 
-<div class="skill">MySQL
-<div class="bar"><div class="fill" data-width="80%"></div></div>
-</div>
-
-<div class="skill">Git / GitHub
-<div class="bar"><div class="fill" data-width="70%"></div></div>
-</div>
+<div class="bar"><div class="progress java"></div></div>
 
 </div>
+
+<div class="skill">
+
+Spring MVC
+
+<div class="bar"><div class="progress spring"></div></div>
+
+</div>
+
+<div class="skill">
+
+HTML / CSS
+
+<div class="bar"><div class="progress html"></div></div>
+
+</div>
+
+<div class="skill">
+
+MySQL
+
+<div class="bar"><div class="progress mysql"></div></div>
+
+</div>
+
 </section>
 
-<section id="projects">
-<h2>Project</h2>
+
+
+<section class="projects">
+
+<h2>Projects</h2>
 
 <div class="project-card">
+
 <h3>Community Agricultural Pre-order Website</h3>
+
 <p>
+
 Web application for community agricultural product pre-ordering built using Java Spring MVC.
 
-เว็บไซต์สำหรับค้นหาและสั่งจองสินค้าเกษตรจากชุมชนล่วงหน้า.
+เว็บไซต์สำหรับค้นหาและสั่งจองสินค้าเกษตรจากชุมชนล่วงหน้า
+
 </p>
 
 <ul>
+
 <li>Search agricultural products</li>
+
 <li>Display farmer information</li>
+
 <li>Pre-order system</li>
+
 <li>Product management</li>
+
 </ul>
 
-<div class="tech">
+<p class="tech">
+
 Tech Stack: Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
+
+</p>
+
+
+<div class="video">
+
+<video controls>
+
+<source src="video/demo.mp4" type="video/mp4">
+
+</video>
+
 </div>
 
-<br>
-<a class="btn" href="https://github.com/786pondchannel/MiniProJ012" target="_blank">View Source Code</a>
+
+<a href="https://github.com/786pondchannel/MiniProJ012" class="btn">
+
+View Source Code
+
+</a>
 
 </div>
 
 </section>
 
-<section>
+
+
+<section class="achievement">
+
 <h2>Achievement</h2>
-<div class="achieve">
-<p>Academic Excellence Award - Maejo University (2023)</p>
-<img src="award.jpg" alt="award">
+
+<div class="award">
+
+<img src="images/award.jpg">
+
+<p>Academic Excellence Award – Maejo University</p>
+
 </div>
+
 </section>
 
-<section>
-<h2>Contact</h2>
-<div class="contact">
-<p>Email: Nakarin0pond@gmail.com</p>
-<p>Phone: 081-515-7121</p>
-<p>GitHub: github.com/nakarin0pond-cloud</p>
-</div>
-</section>
+
 
 <footer>
-© 2026 Nakarin Nanthasen
+
+<p>© 2026 Nakarin Portfolio</p>
+
 </footer>
 
-<script>
-const text=["Java Web Developer","Spring MVC Developer","Building Web Applications"]
-let count=0
-let index=0
-let current=""
-let letter=""
 
-function type(){
-if(count===text.length){count=0}
-current=text[count]
-letter=current.slice(0,++index)
-document.getElementById("typing").textContent=letter
-if(letter.length===current.length){count++;index=0;setTimeout(type,1200)}
-else{setTimeout(type,80)}
-}
-
-type()
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-const fills=document.querySelectorAll('.fill')
-fills.forEach(bar=>{
-bar.style.width=bar.dataset.width
-})
-}
-})
-})
-
-observer.observe(document.querySelector('.skills'))
-
-function scrollToSection(id){
-document.getElementById(id).scrollIntoView({behavior:'smooth'})
-}
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
