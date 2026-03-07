@@ -36,14 +36,70 @@ nav a:hover{
 opacity:1;
 
 }
+.tech span{
 
+padding:10px 16px;
+
+background:#1e293b;
+
+border-radius:8px;
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.tech span:hover{
+
+background:#00eaff;
+
+color:#000;
+
+transform:scale(1.1);
+
+}
+body{
+
+background:linear-gradient(
+-45deg,
+#020617,
+#0f172a,
+#020617,
+#020617
+);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%}
+
+50%{background-position:100% 50%}
+
+100%{background-position:0% 50%}
+
+}
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
 .hero{
-
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:100px;
-
+justify-content:space-between;
+gap:80px;
+padding:120px 10%;
 }
 
 .hero-text{
@@ -190,4 +246,63 @@ background:#ffffff;
 
 .light-mode nav{
 background:#ffffff;
+}
+.profile-wrapper{
+position:relative;
+width:260px;
+height:260px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.profile-ring{
+
+position:absolute;
+
+width:280px;
+height:280px;
+
+border-radius:50%;
+
+background:conic-gradient(
+#00f7ff,
+#00ffa2,
+#0066ff,
+#00f7ff
+);
+
+animation:spin 6s linear infinite;
+
+filter:blur(8px);
+
+}
+
+.profile-img{
+
+width:240px;
+height:240px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+position:relative;
+
+z-index:2;
+
+border:4px solid #0b1120;
+
+}
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
 }
