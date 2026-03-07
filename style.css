@@ -181,12 +181,8 @@ opacity:.7;
 }
 
 .hidden{
-
-opacity:0;
-transform:translateY(40px);
-
-transition:all .8s;
-
+opacity:1;
+transform:none;
 }
 
 .show{
