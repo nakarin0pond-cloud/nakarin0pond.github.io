@@ -1,31 +1,16 @@
-const themeToggle = document.getElementById("themeToggle");
+// smooth scroll
 
-themeToggle.onclick = () => {
+document.querySelectorAll("nav a").forEach(link => {
 
-document.body.classList.toggle("light-mode");
+link.addEventListener("click", e => {
 
-if(document.body.classList.contains("light-mode")){
-themeToggle.innerHTML="☀️";
-}else{
-themeToggle.innerHTML="🌙";
-}
+e.preventDefault()
 
-}
+document.querySelector(link.getAttribute("href"))
+.scrollIntoView({
+behavior:"smooth"
+})
 
-const observer = new IntersectionObserver(entries => {
+})
 
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-});
-
-});
-
-document.querySelectorAll(".hidden").forEach(el=>{
-observer.observe(el);
-});
+})
