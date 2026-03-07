@@ -104,15 +104,19 @@ font-weight:600;
 .profile-glow{
 
 width:260px;
-height:260px;
-
-border-radius:50%;
+height:320px;
 
 padding:6px;
 
-background:linear-gradient(45deg,#00e1ff,#00ffa6,#00e1ff);
+border-radius:14px;
 
-animation:spin 6s linear infinite;
+background:linear-gradient(135deg,#00e1ff,#00ffa6,#7c3aed,#00e1ff);
+
+background-size:300% 300%;
+
+animation:gradientMove 6s ease infinite;
+
+box-shadow:0 0 40px rgba(0,225,255,0.6);
 
 }
 
@@ -120,7 +124,10 @@ animation:spin 6s linear infinite;
 
 width:100%;
 height:100%;
-border-radius:50%;
+
+border-radius:10px;
+
+object-fit:cover;
 
 }
 
@@ -306,5 +313,12 @@ text-align:center;
 padding:20px;
 
 background:#040a18;
+
+}
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
 }
