@@ -52,6 +52,10 @@ align-items:center;
 padding:160px 10%;
 
 }
+.hero-right{
+margin-right:160px;
+margin-top:-20px;
+}
 
 .hero h1{
 
@@ -80,22 +84,23 @@ font-weight:600;
 
 }
 
-/* PROFILE */
-
 .profile{
 
-width:320px;
-height:350px;
+width:480px;
+height:480px;
 
 }
 
 .profile img{
-
 width:100%;
 height:100%;
 object-fit:cover;
 border-radius:20px;
+transition:0.4s;
+}
 
+.profile img:hover{
+transform:scale(1.05);
 }
 
 /* ABOUT */
