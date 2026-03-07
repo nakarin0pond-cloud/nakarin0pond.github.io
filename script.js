@@ -70,4 +70,4 @@ const y = (window.innerHeight/2 - e.pageY)/30
 profile.style.transform =
 `rotateY(${x}deg) rotateX(${y}deg)`
 
-})  
+})
