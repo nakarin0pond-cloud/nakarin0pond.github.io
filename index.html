@@ -1,89 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nakarin Portfolio</title>
+<title>Nakarin.dev</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<header>
+<div class="logo">Nakarin.dev</div>
+
 <nav>
-
-<h2 class="logo">Nakarin.dev</h2>
-
-<button id="themeToggle">🌙</button>
-
+<a href="#about">About</a>
+<a href="#skills">Tech Stack</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
+</header>
+
+
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-text">
+<div class="hero-left">
 
 <h1>Nakarin Nanthasen</h1>
 
-<h3>Junior Web Developer</h3>
+<h2>Junior Web Developer</h2>
 
 <p>
-Information Technology student passionate about
-Web Development and Backend Systems using Java Spring MVC.
+Information Technology student passionate about Web Development and Backend Systems using Java Spring MVC.
 </p>
 
 <a href="#projects" class="btn">View Projects</a>
 
 </div>
 
-<div class="profile-wrapper">
 
-<div class="profile-ring"></div>
+<div class="hero-right">
 
-<img src="images/pond.png" class="profile-img">
+<div class="profile-glow">
+<img src="images/profile.jpg">
+</div>
 
 </div>
 
 </section>
 
-<section class="about hidden">
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<div class="about-left">
 
 <h2>About Me</h2>
 
 <p>
-
-I am an IT student at Maejo University passionate about web development.
-Experienced in building web applications using Java Spring MVC,
-HTML, CSS, JSP and MySQL.
-
+I am an Information Technology student at Maejo University who enjoys building web applications and learning backend development.  
+My main focus is developing systems using Java Spring MVC and MySQL.
 </p>
 
-</section>
+<p>
+I am currently looking for an internship opportunity to gain real-world experience and improve my development skills.
+</p>
 
-<section class="tech hidden">
+</div>
 
-<h2>Tech Stack</h2>
 
-<div class="tech-grid">
+<div class="about-right">
 
-<span>Java</span>
-<span>Spring MVC</span>
-<span>MySQL</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>JSP</span>
-<span>Tailwind</span>
-<span>Docker</span>
-<span>Git</span>
+<div class="cube">
+
+<div class="face front">Java</div>
+<div class="face back">Spring</div>
+<div class="face right">HTML</div>
+<div class="face left">CSS</div>
+<div class="face top">MySQL</div>
+<div class="face bottom">Git</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section id="projects" class="projects hidden">
+
+
+<!-- TECH STACK -->
+
+<section id="skills" class="skills">
+
+<h2>Tech Stack</h2>
+
+<div class="skill-grid">
+
+<div class="skill">Java</div>
+<div class="skill">Spring MVC</div>
+<div class="skill">MySQL</div>
+<div class="skill">JSP</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Tailwind</div>
+<div class="skill">Docker</div>
+<div class="skill">Git</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECT -->
+
+<section id="projects" class="projects">
 
 <h2>Projects</h2>
 
@@ -92,54 +130,45 @@ HTML, CSS, JSP and MySQL.
 <h3>Community Agricultural Pre-order Website</h3>
 
 <p>
-
-Web application for community agricultural product pre-ordering
-built using Java Spring MVC.
-
+Web application for community agricultural product pre-ordering built using Java Spring MVC.
 </p>
 
 <ul>
-
 <li>Search agricultural products</li>
 <li>Display farmer information</li>
 <li>Pre-order system</li>
 <li>Product management</li>
-
 </ul>
 
-<p class="stack">
-
-Tech Stack: Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
-
+<p class="tech">
+Java • Spring MVC • MySQL • JSP • HTML • CSS • Tailwind
 </p>
 
 <video controls>
-
 <source src="video/demo.mp4" type="video/mp4">
-
 </video>
 
-<a href="https://github.com/786pondchannel/MiniProJ012" class="btn">
-
-View GitHub
-
-</a>
+<a href="https://github.com/786pondchannel/MiniProJ012" class="btn">View GitHub</a>
 
 </div>
 
 </section>
 
-<section class="contact hidden">
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
 
 <h2>Contact</h2>
 
-<p>Email: Nakarin0pond@gmail.com</p>
-
-<p>Phone: 081-515-7121</p>
+<p>Email : Nakarin0pond@gmail.com</p>
+<p>Phone : 081-515-7121</p>
 
 <a href="https://github.com/nakarin0pond-cloud">GitHub</a>
 
 </section>
+
 
 <footer>
 
