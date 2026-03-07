@@ -46,11 +46,17 @@ type()
 
 
 /* dark mode */
+const themeToggle = document.getElementById("themeToggle");
 
-const toggle = document.getElementById("themeToggle")
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
 
-toggle.onclick = () =>{
+    if(document.body.classList.contains("light-mode")){
+        themeToggle.innerHTML = "☀️";
+    }else{
+        themeToggle.innerHTML = "🌙";
+    }
+});
 
-document.body.classList.toggle("light")
 
 }
