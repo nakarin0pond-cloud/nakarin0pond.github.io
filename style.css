@@ -178,10 +178,9 @@ animation:rotateCube 12s infinite linear;
 
 margin:auto;
 
-
-filter: drop-shadow(0 0 20px #00e1ff)
-        drop-shadow(0 0 40px #00e1ff)
-        drop-shadow(0 0 80px #00e1ff);
+/* ลดแสงลง */
+filter: drop-shadow(0 0 8px #00e1ff)
+        drop-shadow(0 0 16px rgba(0,225,255,0.4));
 
 }
 
@@ -193,7 +192,7 @@ position:absolute;
 width:200px;
 height:200px;
 
-background:rgba(16,27,56,0.6);
+background:#101b38;
 
 border:2px solid #00e1ff;
 
@@ -205,12 +204,9 @@ font-weight:600;
 
 color:white;
 
-/* แสงออกจากหน้า cube */
+/* แสงอ่อน ๆ */
 box-shadow:
-0 0 10px #00e1ff,
-0 0 20px #00e1ff,
-0 0 40px #00e1ff,
-inset 0 0 10px #00e1ff;
+0 0 6px rgba(0,225,255,0.6);
 
 }
 
