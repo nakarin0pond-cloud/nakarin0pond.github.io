@@ -145,7 +145,7 @@ animation:rotateCube 12s infinite linear;
 
 }
 .cube-wrapper {
-    right: 150px;
+    right: 100px;
     bottom: 120px;
 }
 
