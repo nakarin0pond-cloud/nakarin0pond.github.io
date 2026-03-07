@@ -1,4 +1,4 @@
-const roles = [
+const text = [
 "Junior Web Developer",
 "Java Developer",
 "Backend Developer",
@@ -8,51 +8,53 @@ const roles = [
 let i = 0
 let j = 0
 let current = ""
-let deleting = false
+let isDeleting = false
 
 function type(){
 
-const element = document.getElementById("typing")
+const element = document.querySelector(".typing")
 
-if(i < roles.length){
+if(i < text.length){
 
-if(!deleting && j <= roles[i].length){
+if(!isDeleting && j <= text[i].length){
 
-current = roles[i].substring(0,j++)
+current = text[i].substring(0,j++)
 element.innerHTML = current
 
 }
 
-if(deleting && j >= 0){
+if(isDeleting && j >= 0){
 
-current = roles[i].substring(0,j--)
+current = text[i].substring(0,j--)
 element.innerHTML = current
 
 }
 
-if(j == roles[i].length){
+if(j == text[i].length){
 
-deleting = true
+isDeleting = true
 
 setTimeout(type,1000)
 return
 
 }
 
-if(deleting && j == 0){
+if(isDeleting && j == 0){
 
-deleting = false
+isDeleting = false
 i++
 
-if(i == roles.length){
+if(i == text.length){
+
 i = 0
-}
 
 }
 
 }
 
-setTimeout(type,100)
+}
+
+setTimeout(type,80)
 
 }
 
@@ -60,14 +62,20 @@ type()
 
 
 
-const profile = document.getElementById("profile")
+document.querySelectorAll("nav a").forEach(link=>{
 
-document.addEventListener("mousemove",(e)=>{
+link.addEventListener("click",e=>{
 
-const x = (window.innerWidth/2 - e.pageX)/30
-const y = (window.innerHeight/2 - e.pageY)/30
+e.preventDefault()
 
-profile.style.transform =
-`rotateY(${x}deg) rotateX(${y}deg)`
+document.querySelector(link.getAttribute("href"))
+
+.scrollIntoView({
+
+behavior:"smooth"
+
+})
+
+})
 
 })
