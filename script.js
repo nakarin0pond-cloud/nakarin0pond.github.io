@@ -1,10 +1,10 @@
 const text = [
-"Frontend Developer",
-"Backend Developer",
+"Junior Web Developer",
 "Java Developer",
-"Spring Boot Developer",
-"Full Stack Developer"
+"Backend Developer",
+"Spring MVC Developer"
 ]
+
 let i = 0
 let j = 0
 let current = ""
@@ -14,20 +14,18 @@ function type(){
 
 const element = document.querySelector(".typing")
 
-if(!element) return
-
 if(i < text.length){
 
 if(!isDeleting && j <= text[i].length){
 
-current = text[i].substring(0, j++)
+current = text[i].substring(0,j++)
 element.innerHTML = current
 
 }
 
 if(isDeleting && j >= 0){
 
-current = text[i].substring(0, j--)
+current = text[i].substring(0,j--)
 element.innerHTML = current
 
 }
@@ -35,7 +33,7 @@ element.innerHTML = current
 if(j == text[i].length){
 
 isDeleting = true
-setTimeout(type, 1000)
+setTimeout(type,1000)
 return
 
 }
@@ -55,17 +53,15 @@ i = 0
 
 }
 
-setTimeout(type, 80)
+setTimeout(type,80)
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
 type()
 
-document.querySelectorAll("nav a").forEach(link => {
+document.querySelectorAll("nav a").forEach(link=>{
 
-link.addEventListener("click", e => {
+link.addEventListener("click",e=>{
 
 e.preventDefault()
 
@@ -73,8 +69,6 @@ document
 .querySelector(link.getAttribute("href"))
 .scrollIntoView({
 behavior:"smooth"
-})
-
 })
 
 })
