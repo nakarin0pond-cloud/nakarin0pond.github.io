@@ -144,6 +144,10 @@ transform-style:preserve-3d;
 animation:rotateCube 12s infinite linear;
 
 }
+.cube-wrapper {
+    right: 150px;
+    bottom: 120px;
+}
 
 .face{
 
