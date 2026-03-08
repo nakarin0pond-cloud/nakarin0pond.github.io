@@ -329,30 +329,42 @@ background:#040b1d;
 
 }
 .education{
-    max-width:900px;
-    margin:auto;
-    padding:80px 20px;
+    padding:100px 20px;
+    text-align:center;
 }
 
 .education h2{
-    text-align:center;
     font-size:32px;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
-.edu-item{
-    background:#1b1b1b;
+.edu-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.edu-card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
     padding:25px;
+    border-radius:12px;
     margin-bottom:20px;
-    border-radius:10px;
+    text-align:left;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
 }
 
-.edu-item h3{
+.edu-card:hover{
+    transform:translateY(-5px);
+    border-color:#00e5ff;
+}
+
+.edu-card h3{
     font-size:20px;
     margin-bottom:5px;
 }
 
-.edu-item span{
+.edu-card span{
     color:#aaa;
     font-size:14px;
 }
