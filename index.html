@@ -1,86 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nakarin Nantasenna Portfolio</title>
+<title>Pond Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header class="navbar">
+<header>
 
-<div class="logo">Nakarin</div>
+<div class="logo">POND</div>
 
 <nav>
+
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#education">Education</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 </header>
 
 
-
 <section class="hero">
 
-<div class="hero-text">
+<div class="hero-left">
 
-<p class="status">● Available for Cooperative Internship</p>
+<div class="badge">
 
-<h1>Nakarin<br>Nanthasen</h1>
+<span></span>
 
-<h2>Junior Web Developer</h2>
-
-<p>
-Information Technology student at Maejo University with strong interest in
-full-stack web development. Passionate about building useful systems
-that connect people and technology.
-</p>
-
-<a href="#projects" class="btn">View My Work</a>
+Available for Cooperative Internship · Apr 1 – Jul 24 2026
 
 </div>
 
-<div class="hero-img">
+<h1>Pond</h1>
 
-<img src="images/profile.jpg" alt="profile">
+<h2 class="typing"></h2>
+
+<p>
+
+Computer Science student passionate about building web applications
+and learning modern development technologies.
+
+</p>
+
+<a href="#projects" class="btn">
+
+View My Work
+
+</a>
+
+</div>
+
+
+<div class="hero-right">
+
+<img src="images/pond.png">
 
 </div>
 
 </section>
 
 
+<section class="about" id="about">
 
-<section id="about" class="about">
+<div class="about-left">
 
 <h2>About Me</h2>
 
-<div class="about-container">
-
-<div class="about-text">
-
 <p>
-I am an Information Technology student at Maejo University.
-I enjoy developing web applications and learning modern
-software development technologies.
+
+I'm a Computer Science student interested in front-end development
+and building modern web applications.
+
 </p>
 
-<ul>
+</div>
 
-<li>Skilled in Java, Spring MVC, HTML, CSS and MySQL</li>
-<li>Experience developing web applications</li>
-<li>Experience using Docker and GitHub</li>
-<li>Passionate about full-stack development</li>
 
-</ul>
+<div class="about-right">
+
+<div class="cube">
+
+<div class="face front">HTML</div>
+<div class="face back">CSS</div>
+<div class="face right">JS</div>
+<div class="face left">React</div>
+<div class="face top">Node</div>
+<div class="face bottom">Git</div>
 
 </div>
 
@@ -89,133 +107,70 @@ software development technologies.
 </section>
 
 
+<section class="skills" id="skills">
 
-<section id="skills" class="skills">
-
-<h2>Tech Stack & Tools</h2>
+<h2>Skills</h2>
 
 <div class="skill-grid">
 
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
 <div class="skill">JavaScript</div>
-<div class="skill">Java</div>
-<div class="skill">Spring MVC</div>
-<div class="skill">MySQL</div>
-<div class="skill">Node.js</div>
 <div class="skill">React</div>
-<div class="skill">Docker</div>
+<div class="skill">Node.js</div>
 <div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">phpMyAdmin</div>
 
 </div>
 
 </section>
 
 
+<section class="projects" id="projects">
 
-<section id="projects" class="projects">
-
-<h2>Featured Project</h2>
+<h2>Projects</h2>
 
 <div class="project-card">
 
-<h3>🌾 Community Agricultural Pre-order Website</h3>
+<h3>Web Application Project</h3>
 
 <p>
-A web application that allows users to pre-order agricultural
-products directly from farmers in the community.
+
+A web application project built to practice front-end
+and backend development skills.
+
 </p>
 
-<h4>Technologies Used</h4>
+<p class="tech">
 
-<p>
-Java • Spring MVC • HTML • CSS • MySQL • Docker
+HTML • CSS • JavaScript
+
 </p>
 
-<h4>Key Features</h4>
+<video controls class="project-video">
 
-<ul>
+<source src="videos/project-demo.mp4" type="video/mp4">
 
-<li>User registration and login system</li>
-<li>Browse agricultural products</li>
-<li>Pre-order system for farm products</li>
-<li>Product management for farmers</li>
-<li>Upload payment slip system</li>
-
-</ul>
-
-<h4>Project Demonstration</h4>
-
-<div class="video-container">
-
-<iframe
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-</div>
-
-<a class="btn" href="https://github.com/" target="_blank">
-View Source Code (GitHub)
-</a>
+</video>
 
 </div>
 
 </section>
 
 
+<section class="contact" id="contact">
 
-<section id="education" class="education">
+<h2>Contact</h2>
 
-<h2>Education</h2>
+<p>Email: your@email.com</p>
 
-<div class="edu-card">
-
-<h3>Maejo University – Thailand</h3>
-
-<p>Bachelor of Science in Information Technology</p>
-
-<span>2021 – Present</span>
-
-</div>
-
-
-<div class="edu-card">
-
-<h3>Huayso Wittayakhom Ratchamangklaphisek School</h3>
-
-<span>2014 – 2020</span>
-
-</div>
+<p>GitHub: github.com/yourname</p>
 
 </section>
-
-
-
-<section id="contact" class="contact">
-
-<h2>Let's Connect</h2>
-
-<p>"Great products are built by great people working together."</p>
-
-<div class="contact-info">
-
-<p>Email : nakarin0pond@gmail.com</p>
-<p>Phone : 081-515-7121</p>
-<p>Location : Chiang Rai, Thailand</p>
-
-</div>
-
-</section>
-
 
 
 <footer>
 
-<p>© 2026 Nakarin Nantasenna Portfolio</p>
+© 2026 Pond Portfolio
 
 </footer>
 
