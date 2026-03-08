@@ -8,14 +8,20 @@ font-family:Arial, Helvetica, sans-serif;
 body{
 background:linear-gradient(135deg,#071a3d,#0b2a63);
 color:white;
+line-height:1.6;
 }
 
-/* HEADER */
 
-header{
+
+/* NAVBAR */
+
+.navbar{
 display:flex;
 justify-content:space-between;
 padding:20px 10%;
+position:sticky;
+top:0;
+background:#06162f;
 }
 
 nav a{
@@ -28,6 +34,7 @@ opacity:0.8;
 nav a:hover{
 opacity:1;
 }
+
 
 
 /* HERO */
@@ -53,19 +60,69 @@ margin:10px 0;
 color:#00e5ff;
 }
 
-.hero-text button{
+.hero-text p{
+margin-top:10px;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
 margin-top:20px;
 padding:12px 25px;
-border:none;
-border-radius:30px;
 background:#00e5ff;
-cursor:pointer;
+border-radius:30px;
+text-decoration:none;
+color:black;
+font-weight:bold;
 }
 
 .hero-img img{
 width:280px;
 border-radius:15px;
 }
+
+
+
+/* ABOUT */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+.about-text{
+max-width:700px;
+margin:auto;
+margin-top:20px;
+}
+
+.about ul{
+margin-top:20px;
+text-align:left;
+}
+
+
+
+/* SKILLS */
+
+.skills{
+padding:80px 10%;
+text-align:center;
+}
+
+.skill-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.skill{
+background:rgba(255,255,255,0.08);
+padding:10px;
+border-radius:8px;
+}
+
 
 
 /* PROJECT */
@@ -82,22 +139,22 @@ max-width:900px;
 margin:auto;
 }
 
-.project-desc{
+.project-card ul{
 margin:15px 0;
-opacity:0.8;
 }
 
 
-/* YOUTUBE VIDEO */
 
-.project-video{
+/* VIDEO */
+
+.video-container{
 position:relative;
 width:100%;
 padding-bottom:56.25%;
 margin-top:20px;
 }
 
-.project-video iframe{
+.video-container iframe{
 position:absolute;
 top:0;
 left:0;
@@ -107,23 +164,11 @@ border-radius:10px;
 }
 
 
-/* GITHUB BUTTON */
-
-.github-btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#00e5ff;
-border-radius:30px;
-text-decoration:none;
-color:black;
-}
-
 
 /* EDUCATION */
 
 .education{
-padding:100px 10%;
+padding:80px 10%;
 text-align:center;
 }
 
@@ -136,18 +181,29 @@ max-width:600px;
 text-align:left;
 }
 
-.edu-card span{
-opacity:0.7;
-}
 
 
 /* CONTACT */
 
 .contact{
-text-align:center;
 padding:80px 10%;
-opacity:0.9;
+text-align:center;
 }
+
+.contact-info{
+margin-top:20px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.7;
+}
+
 
 
 /* MOBILE */
@@ -159,8 +215,12 @@ flex-direction:column;
 text-align:center;
 }
 
-.hero-img img{
+.hero-img{
 margin-top:30px;
+}
+
+nav{
+display:none;
 }
 
 }
