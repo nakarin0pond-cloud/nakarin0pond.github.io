@@ -31,10 +31,21 @@ backdrop-filter:blur(10px);
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-font-weight:700;
-font-size:20px;
+.logo img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
 
+.logo p{
+    font-size:20px;
+    font-weight:600;
 }
 
 nav a{
@@ -311,4 +322,32 @@ padding:30px;
 
 background:#040b1d;
 
+}
+.education{
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.education h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.edu-item{
+    background:#1b1b1b;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+.edu-item h3{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.edu-item span{
+    color:#aaa;
+    font-size:14px;
 }
