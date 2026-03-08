@@ -1,89 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>PlanFlow</title>
 
-<link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nakarin Nantasenna Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="app">
+<header>
 
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sb">
-<div class="sb-scroll">
+<div class="logo">Nakarin</div>
 
-<div class="brand">
-<div class="brand-gem">P</div>
-<span class="brand-name">PlanFlow</span>
-<button class="sb-x" id="sbClose">×</button>
-</div>
-
-<div class="nav">
-
-<button class="nav-item active">
-🏠 Dashboard
-</button>
-
-<button class="nav-item">
-📝 Tasks
-</button>
-
-<button class="nav-item">
-📅 Calendar
-</button>
-
-<button class="nav-item">
-⚙ Settings
-</button>
-
-</div>
-
-</div>
-</aside>
-
-
-<!-- MAIN -->
-<main class="main">
-
-<header class="topbar">
-
-<button id="sbOpen">☰</button>
-
-<h1 class="title">
-PlanFlow
-</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
 
 </header>
 
 
-<section class="content">
+<section class="hero">
 
-<div class="task-input">
+<div class="hero-text">
 
-<input
-type="text"
-id="taskInput"
-placeholder="Add new task..."
-/>
+<p class="status">● Available for Cooperative Internship</p>
 
-<button id="addTask">
-Add
-</button>
+<h1>Nakarin<br>Nanthasen</h1>
+
+<h2>Junior Web Developer</h2>
+
+<p>
+Information Technology student at Maejo University with strong interest in full-stack web development.
+Passionate about building systems that connect people and technology.
+</p>
+
+<a class="btn" href="#projects">View My Work</a>
 
 </div>
 
-<ul id="taskList"></ul>
+
+<div class="hero-img">
+
+<img src="images/profile.jpg" alt="profile">
+
+</div>
 
 </section>
 
-</main>
+
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<p>
+Information Technology student at Maejo University.  
+I enjoy building web applications and learning modern development technologies.
+</p>
+
+</section>
+
+
+
+<section id="skills" class="skills">
+
+<h2>Tech Stack & Tools</h2>
+
+<div class="skill-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Java</div>
+<div class="skill">Spring MVC</div>
+<div class="skill">MySQL</div>
+<div class="skill">Node.js</div>
+<div class="skill">React</div>
+<div class="skill">Docker</div>
+<div class="skill">Git</div>
 
 </div>
+
+</section>
+
+
+
+<section id="projects" class="projects">
+
+<h2>Featured Project</h2>
+
+<div class="project-card">
+
+<h3>🌾 Community Agricultural Pre-order Website</h3>
+
+<p>
+A web application that allows users to pre-order agricultural products
+directly from farmers in the community.
+</p>
+
+<h4>Technologies Used</h4>
+
+<p>
+Java • Spring MVC • HTML • CSS • MySQL • Docker
+</p>
+
+<h4>Project Demonstration</h4>
+
+<div class="video-container">
+
+<iframe
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<a class="btn" href="https://github.com/" target="_blank">
+View Source Code (GitHub)
+</a>
+
+</div>
+
+</section>
+
+
+
+<section id="education" class="education">
+
+<h2>Education</h2>
+
+<div class="edu-card">
+
+<h3>Maejo University – Thailand</h3>
+
+<p>Bachelor of Science in Information Technology</p>
+
+<span>2021 – Present</span>
+
+</div>
+
+
+<div class="edu-card">
+
+<h3>Huayso Wittayakhom Ratchamangklaphisek School</h3>
+
+<span>2014 – 2020</span>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>Let's Connect</h2>
+
+<p>Email : nakarin0pond@gmail.com</p>
+<p>Phone : 081-515-7121</p>
+<p>Location : Chiang Rai, Thailand</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Nakarin Nantasenna Portfolio</p>
+
+</footer>
 
 <script src="script.js"></script>
 
