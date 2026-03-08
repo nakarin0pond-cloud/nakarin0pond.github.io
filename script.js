@@ -1,76 +1,42 @@
-const text = [
-"Junior Web Developer",
-"Java Developer",
-"Backend Developer",
-"Spring MVC Developer"
-]
+const input = document.getElementById("taskInput")
+const addBtn = document.getElementById("addTask")
+const list = document.getElementById("taskList")
 
-let i = 0
-let j = 0
-let current = ""
-let isDeleting = false
+addBtn.onclick = () => {
 
-function type(){
+const text = input.value.trim()
 
-const element = document.querySelector(".typing")
+if(text === "") return
 
-if(i < text.length){
+const li = document.createElement("li")
+li.className = "task"
 
-if(!isDeleting && j <= text[i].length){
+li.innerHTML = `
+<span>${text}</span>
+<button class="delete">X</button>
+`
 
-current = text[i].substring(0,j++)
-element.innerHTML = current
+li.querySelector(".delete").onclick = () => {
+li.remove()
+}
+
+list.appendChild(li)
+
+input.value = ""
 
 }
 
-if(isDeleting && j >= 0){
 
-current = text[i].substring(0,j--)
-element.innerHTML = current
+// sidebar toggle
 
+const sb = document.getElementById("sb")
+const open = document.getElementById("sbOpen")
+const close = document.getElementById("sbClose")
+
+open.onclick = () => {
+sb.classList.remove("closed")
 }
 
-if(j == text[i].length){
-
-isDeleting = true
-setTimeout(type,1000)
-return
-
+close.onclick = () => {
+sb.classList.add("closed")
 }
-
-if(isDeleting && j == 0){
-
-isDeleting = false
-i++
-
-if(i == text.length){
-
-i = 0
-
-}
-
-}
-
-}
-
-setTimeout(type,80)
-
-}
-
-type()
-
-document.querySelectorAll("nav a").forEach(link=>{
-
-link.addEventListener("click",e=>{
-
-e.preventDefault()
-
-document
-.querySelector(link.getAttribute("href"))
-.scrollIntoView({
-behavior:"smooth"
-})
-
-})
-
-})
