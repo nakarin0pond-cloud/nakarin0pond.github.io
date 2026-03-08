@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,15 +8,27 @@
 
 <title>Nakarin Nantasenna Portfolio</title>
 
+<meta property="og:title" content="Nakarin Nantasenna Portfolio">
+<meta property="og:description" content="Junior Web Developer | Java Developer | Backend Developer | Spring MVC Developer">
+
+<meta property="og:image" content="https://nakarin0pond-cloud.github.io/nakarin0pond.github.io/images/pond.png">
+<meta property="og:url" content="https://nakarin0pond-cloud.github.io/nakarin0pond.github.io/">
+
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header class="navbar">
+<header>
 
-<div class="logo">Nakarin</div>
+<div class="logo">
+<p>Nakarin</p>
+</div>
 
 <nav>
 <a href="#about">About</a>
@@ -28,61 +41,69 @@
 </header>
 
 
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-text">
+<div class="hero-left">
 
-<p class="status">● Available for Cooperative Internship</p>
+<div class="badge">
+Available for Cooperative Internship · Apr 1 – Jul 24 2026
+</div>
 
-<h1>Nakarin<br>Nanthasen</h1>
+<h1>Nakarin Nanthasen</h1>
 
-<h2>Junior Web Developer</h2>
+<h2 class="typing"></h2>
 
 <p>
-Information Technology student at Maejo University with strong interest in
-full-stack web development. Passionate about building useful systems
-that connect people and technology.
+Information Technology student at Maejo University with strong interest
+in full-stack web application development.
 </p>
 
-<a href="#projects" class="btn">View My Work</a>
+<a href="#projects" class="btn">
+View My Work
+</a>
 
 </div>
 
-<div class="hero-img">
-
-<img src="images/profile.jpg" alt="profile">
-
+<div class="hero-right">
+<img src="images/pond.png">
 </div>
 
 </section>
 
 
 
-<section id="about" class="about">
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-left">
 
 <h2>About Me</h2>
 
-<div class="about-container">
-
-<div class="about-text">
+<p>🎓 Information Technology Student at Maejo University</p>
 
 <p>
-I am an Information Technology student at Maejo University.
-I enjoy developing web applications and learning modern
-software development technologies.
+💻 Passionate about building web applications and modern software systems.
 </p>
 
-<ul>
+<p>
+🛠 Skilled in Java, Spring MVC, JavaScript, HTML, CSS and MySQL.
+</p>
 
-<li>Skilled in Java, Spring MVC, HTML, CSS and MySQL</li>
-<li>Experience developing web applications</li>
-<li>Experience using Docker and GitHub</li>
-<li>Passionate about full-stack development</li>
+<p>
+🧪 Developed Community Agricultural Pre-order Web Application
+using Java Spring MVC.
+</p>
 
-</ul>
+<p>
+🏆 Outstanding Academic Achievement Award 2023
+</p>
 
-</div>
+<p>
+🎯 Goal: Become a professional full-stack developer.
+</p>
 
 </div>
 
@@ -90,7 +111,9 @@ software development technologies.
 
 
 
-<section id="skills" class="skills">
+<!-- SKILLS -->
+
+<section class="skills" id="skills">
 
 <h2>Tech Stack & Tools</h2>
 
@@ -115,7 +138,9 @@ software development technologies.
 
 
 
-<section id="projects" class="projects">
+<!-- PROJECT -->
+
+<section class="projects" id="projects">
 
 <h2>Featured Project</h2>
 
@@ -123,42 +148,42 @@ software development technologies.
 
 <h3>🌾 Community Agricultural Pre-order Website</h3>
 
+<p>Graduation Project – Maejo University</p>
+
 <p>
-A web application that allows users to pre-order agricultural
-products directly from farmers in the community.
+A web application that allows users to pre-order agricultural products
+directly from farmers in the community.
 </p>
 
 <h4>Technologies Used</h4>
 
 <p>
-Java • Spring MVC • HTML • CSS • MySQL • Docker
+Java • Spring MVC • HTML • CSS • MySQL • Docker • phpMyAdmin
 </p>
 
 <h4>Key Features</h4>
 
 <ul>
-
 <li>User registration and login system</li>
 <li>Browse agricultural products</li>
-<li>Pre-order system for farm products</li>
+<li>Pre-order system</li>
 <li>Product management for farmers</li>
 <li>Upload payment slip system</li>
-
 </ul>
+
 
 <h4>Project Demonstration</h4>
 
-<div class="video-container">
-
-<iframe
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+<iframe class="project-video"
+src="https://www.youtube.com/embed/CVKow8gMEYk"
+title="Project Demo"
 frameborder="0"
 allowfullscreen>
 </iframe>
 
-</div>
+<br><br>
 
-<a class="btn" href="https://github.com/" target="_blank">
+<a href="https://github.com/786pondchannel/MiniProJ012" target="_blank" class="btn">
 View Source Code (GitHub)
 </a>
 
@@ -168,26 +193,24 @@ View Source Code (GitHub)
 
 
 
-<section id="education" class="education">
+<!-- EDUCATION -->
+
+<section class="education">
 
 <h2>Education</h2>
 
+<div class="edu-container">
+
 <div class="edu-card">
-
 <h3>Maejo University – Thailand</h3>
-
 <p>Bachelor of Science in Information Technology</p>
-
 <span>2021 – Present</span>
-
 </div>
 
-
 <div class="edu-card">
-
-<h3>Huayso Wittayakhom Ratchamangklaphisek School</h3>
-
+<h3>Huayso Wittayakhom School</h3>
 <span>2014 – 2020</span>
+</div>
 
 </div>
 
@@ -195,30 +218,27 @@ View Source Code (GitHub)
 
 
 
-<section id="contact" class="contact">
+<!-- CONTACT -->
 
-<h2>Let's Connect</h2>
+<section class="contact" id="contact">
 
-<p>"Great products are built by great people working together."</p>
-
-<div class="contact-info">
+<h2>Let’s Connect</h2>
 
 <p>Email : nakarin0pond@gmail.com</p>
+
 <p>Phone : 081-515-7121</p>
+
 <p>Location : Chiang Rai, Thailand</p>
 
-</div>
+<p>GitHub : https://github.com/786pondchannel</p>
 
 </section>
 
 
 
 <footer>
-
-<p>© 2026 Nakarin Nantasenna Portfolio</p>
-
+© 2026 Nakarin Nantasena Portfolio
 </footer>
-
 
 <script src="script.js"></script>
 
