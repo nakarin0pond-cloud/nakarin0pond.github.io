@@ -47,6 +47,11 @@ backdrop-filter:blur(10px);
     font-size:20px;
     font-weight:600;
 }
+.education{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
 
 nav a{
 
