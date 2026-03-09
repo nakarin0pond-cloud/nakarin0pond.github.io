@@ -6,281 +6,311 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nakarin Nantasena Portfolio</title>
+<title>My Projects</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body{
+
+background:#081229;
+color:white;
+
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 10%;
+
+background:#0d1a36;
+
+}
+
+nav h1{
+
+font-size:22px;
+
+}
+
+nav ul{
+
+display:flex;
+gap:25px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+font-weight:500;
+
+}
+
+/* PROJECT SECTION */
+
+.projects{
+
+padding:80px 10%;
+text-align:center;
+
+}
+
+.projects h2{
+
+font-size:36px;
+margin-bottom:50px;
+
+}
+
+/* CONTAINER */
+
+.projects-container{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:50px;
+
+}
+
+/* PROJECT CARD */
+
+.project-card{
+
+background:#0d1a36;
+
+padding:40px;
+
+border-radius:20px;
+
+max-width:900px;
+width:100%;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+transition:.3s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/* TITLE */
+
+.project-card h3{
+
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+/* DESCRIPTION */
+
+.project-card p{
+
+color:#cbd5e1;
+
+margin-bottom:20px;
+
+line-height:1.6;
+
+}
+
+/* VIDEO */
+
+.video-wrapper{
+
+width:100%;
+
+aspect-ratio:16/9;
+
+}
+
+.video-wrapper iframe{
+
+width:100%;
+height:100%;
+
+border:none;
+
+border-radius:12px;
+
+}
+
+/* BUTTONS */
+
+.project-buttons{
+
+margin-top:20px;
+
+display:flex;
+justify-content:center;
+
+gap:15px;
+
+}
+
+.btn{
+
+padding:10px 18px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-size:14px;
+
+font-weight:500;
+
+}
+
+.btn-demo{
+
+background:#22c55e;
+color:white;
+
+}
+
+.btn-github{
+
+background:#334155;
+color:white;
+
+}
+
+.btn:hover{
+
+opacity:0.85;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+
+padding:30px;
+
+text-align:center;
+
+color:#94a3b8;
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">Nakarin</div>
+<!-- NAVBAR -->
 
 <nav>
 
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
+<h1>My Portfolio</h1>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
 
 </nav>
 
-</header>
+<!-- PROJECTS -->
 
+<section class="projects">
 
+<h2>My Projects</h2>
 
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-left">
-
-<div class="badge">
-<span></span>
-Available for Cooperative Internship · Apr 1 – Jul 24 2026
-</div>
-
-<h1>Nakarin Nantasena</h1>
-
-<h2 class="typing"></h2>
-
-<p>
-
-Information Technology student at Maejo University with strong interest
-in full-stack web application development. Passionate about building
-community-focused systems that connect people and technology.
-
-</p>
-
-<a href="#projects" class="btn">
-View My Work
-</a>
-
-</div>
-
-<div class="hero-right">
-
-<img src="images/pond.png">
-
-</div>
-
-</section>
-
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-<div class="about-left">
-
-<h2>About Me</h2>
-
-<p>🎓 Information Technology Student at Maejo University</p>
-
-<p>
-💻 Passionate about building web applications and learning modern
-software development technologies.
-</p>
-
-<p>
-🛠 Skilled in Java, Spring MVC, JavaScript, HTML, CSS and MySQL.
-</p>
-
-<p>
-🧪 Developed a Community Agricultural Pre-order Web Application
-connecting farmers directly with consumers.
-</p>
-
-<p>
-🏆 Outstanding Academic Achievement Award 2023
-</p>
-
-<p>
-🎯 My goal is to become a professional full-stack developer.
-</p>
-
-</div>
-
-
-
-<div class="about-right">
-
-<div class="cube">
-
-<div class="face front">HTML</div>
-<div class="face back">CSS</div>
-<div class="face right">JS</div>
-<div class="face left">React</div>
-<div class="face top">Java</div>
-<div class="face bottom">MySQL</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section class="skills" id="skills">
-
-<h2>Tech Stack & Tools</h2>
-
-<div class="skill-grid">
-
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Java</div>
-<div class="skill">Spring MVC</div>
-<div class="skill">MySQL</div>
-<div class="skill">Node.js</div>
-<div class="skill">React</div>
-<div class="skill">Docker</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">phpMyAdmin</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PROJECT -->
-
-<section class="projects" id="projects">
-
-<h2>Featured Projects</h2>
-
-
+<div class="projects-container">
 
 <!-- PROJECT 1 -->
 
 <div class="project-card">
 
-<h3>🌾 Community Agricultural Pre-order Website</h3>
-
-<p>Graduation Project – Maejo University</p>
+<h3>To-Do List Web App</h3>
 
 <p>
-A web application that allows users to pre-order agricultural products
-directly from farmers in the community.
+A simple task management web application built using HTML, CSS, and JavaScript.
+Users can create, edit, complete, and delete tasks. The app uses localStorage
+to keep tasks saved even after refreshing the page.
 </p>
-
-<h4>Technologies Used</h4>
-
-<p>
-Java • Spring MVC • HTML • CSS • MySQL • Docker • phpMyAdmin
-</p>
-
-<h4>Project Demonstration</h4>
 
 <div class="video-wrapper">
 
 <iframe
-src="https://www.youtube.com/embed/CVKow8gMEYk"
-title="Project Demo"
-frameborder="0"
+src="https://www.youtube.com/embed/n-Pj2_Nv7C8"
+title="To Do App"
 allowfullscreen>
 </iframe>
 
 </div>
 
-<br>
+<div class="project-buttons">
 
-<a href="https://github.com/786pondchannel/MiniProJ012" target="_blank" class="btn">
-View Source Code
-</a>
+<a href="#" class="btn btn-demo">Live Demo</a>
+
+<a href="#" class="btn btn-github">GitHub</a>
 
 </div>
 
-
+</div>
 
 <!-- PROJECT 2 -->
 
 <div class="project-card">
 
-<h3>📅 Calendar Planner Web Application</h3>
+<h3>Calendar Planner App</h3>
 
 <p>
-An interactive calendar planner inspired by modern productivity tools
-such as Notion, Linear and Cron.
+A modern calendar planner inspired by Notion and Cron. The application includes
+Month, Week, and Day views, supports single-day and range events, and allows
+users to categorize tasks. All data is stored locally using localStorage.
 </p>
 
-<h4>Technologies Used</h4>
+<div class="video-wrapper">
 
-<p>
-JavaScript • HTML • CSS • LocalStorage
-</p>
-
-<h4>Key Features</h4>
-
-<ul>
-
-<li>Month, Week and Day calendar views</li>
-<li>Create single-day or multi-day range events</li>
-<li>Category system with color and icons</li>
-<li>Upcoming events sidebar</li>
-<li>Timeline based weekly and daily schedule</li>
-<li>Data persistence using LocalStorage</li>
-
-</ul>
-
-<p style="color:#22c55e;font-weight:500;">
-⚙ Monthly planner view is currently under development.
-</p>
-
-<br>
-
-<a href="https://nakarin0pond-cloud.github.io/todo-list-app/" target="_blank" class="btn">
-Live Demo
-</a>
+<iframe
+src="https://www.youtube.com/embed/4zPq6FfT0vM"
+title="Calendar Planner"
+allowfullscreen>
+</iframe>
 
 </div>
 
-</section>
+<div class="project-buttons">
 
+<a href="#" class="btn btn-demo">Live Demo</a>
 
-
-<!-- EDUCATION -->
-
-<section class="education" id="education">
-
-<h2 class="section-title">Education</h2>
-
-<div class="education-container">
-
-<div class="education-card">
-
-<h3>Maejo University – Thailand</h3>
-
-<p class="degree">
-Bachelor of Science in Information Technology
-</p>
-
-<span class="edu-year">2021 – Present</span>
+<a href="#" class="btn btn-github">GitHub</a>
 
 </div>
-
-
-<div class="education-card">
-
-<h3>Huayso Wittayakhom Ratchamangklaphisek School</h3>
-
-<p class="degree">
-Science – Mathematics Program
-</p>
-
-<span class="edu-year">2014 – 2020</span>
 
 </div>
 
@@ -288,39 +318,14 @@ Science – Mathematics Program
 
 </section>
 
-
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-<h2>Let’s Connect</h2>
-
-<p>
-“Great products are built by great people working together.”
-</p>
-
-<br>
-
-<p>Email : nakarin0pond@gmail.com</p>
-
-<p>Phone : 081-515-7121</p>
-
-<p>Location : Chiang Rai, Thailand</p>
-
-<p>GitHub : https://github.com/786pondchannel</p>
-
-</section>
-
-
+<!-- FOOTER -->
 
 <footer>
 
-© 2026 Nakarin Nantasena Portfolio
+<p>© 2026 My Portfolio</p>
 
 </footer>
 
-<script src="script.js"></script>
-
 </body>
+
 </html>
