@@ -312,3 +312,22 @@ padding:30px;
 background:#040b1d;
 
 }
+.video-wrapper{
+
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+margin-top:20px;
+
+}
+
+.video-wrapper iframe{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border-radius:10px;
+
+}
