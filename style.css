@@ -331,3 +331,58 @@ height:100%;
 border-radius:10px;
 
 }
+/* EDUCATION SECTION */
+
+.education{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:50px;
+}
+
+.education-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.education-card{
+
+background:linear-gradient(145deg,#0f1f3d,#0b1a34);
+
+padding:30px;
+border-radius:15px;
+
+width:350px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+transition:0.3s;
+
+}
+
+.education-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+
+}
+
+.education-card h3{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.degree{
+color:#cbd5e1;
+margin-bottom:10px;
+}
+
+.edu-year{
+color:#22c55e;
+font-weight:500;
+}
